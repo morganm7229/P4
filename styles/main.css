@@ -18,9 +18,12 @@
 .card {
     float: left;
     text-align: center;
-    width: 33.333333%;
+    width: 31.333333%;
     margin-top: 10px;
     padding: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 11em;
 }
 
 .navbar a {
