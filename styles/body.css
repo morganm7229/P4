@@ -1,0 +1,19 @@
+* {
+    color: white;
+}
+
+
+
+.tables {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+td {
+    color: black
+}
+
+.tables {
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+}
