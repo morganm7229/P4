@@ -1,10 +1,4 @@
-.jumbotron {
-    background: url(../images/logo.webp) no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    margin-bottom: 0;
-    text-align: center;
-}
+
 
 a:link {
     color: white;
@@ -87,4 +81,27 @@ border-collapse: collapse;
 border-spacing: 0;
 width: 100%;
 border: 1px solid #ddd;
+}
+
+.jumbotron {
+    height: 200px;
+    background-size: contain;
+    background: black;
+}
+* {
+    color: red;
+}
+
+/*add a media query for min screen size of 480px where the jumbotron is 100px high*/
+@media screen and (min-width: 480px) {
+    .jumbotron {
+        background: url(../images/logo.webp) no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    * {
+        color: green;
+    }
 }
