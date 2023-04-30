@@ -1,8 +1,24 @@
+/* DEVELOPER: Morgan Murphy, IS117-006, Spring 2023 */
+
 * {
     color: white;
 }
 
+textarea{
+    width: 400px;
+}
 
+input, textarea {
+    color: black;
+}
+
+body {
+    background: url(../images/logo.webp) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 0;
+    text-align: center;
+}
 
 .tables {
     margin-top: 15px;
@@ -13,7 +29,17 @@ td {
     color: black
 }
 
-.tables {
+.formContainer {
+    margin-top: 10px;
+}
+
+.tables, .formContainer {
     background: rgba(0,0,0,0.7);
     padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    textarea {
+        width: 400px;
+    }
 }
