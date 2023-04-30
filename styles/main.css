@@ -1,11 +1,9 @@
-
-
-a:link {
-    color: white;
-}
-
-body {
+.jumbotron {
     background: url(../images/logo.webp) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .jumbotron .container {
@@ -39,7 +37,6 @@ footer {
     clear: both;
     background-color: black;
     color: white;
-    margin-top: 100px;
 }
 
 .center {
@@ -51,57 +48,13 @@ tr {
     line-height: 40px;
 }
 
-.previousTable {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    float: left;
-}
-
-.container p {
-    clear: both;
-}
-
-.row {
-    margin-left:-5px;
-    margin-right:-5px;
-  }
-    
-
-  
-/* Clearfix (clear floats) */
-.row::after {
-content: "";
-clear: both;
-display: table;
-}
-
-table {
-border-collapse: collapse;
-border-spacing: 0;
-width: 100%;
-border: 1px solid #ddd;
-}
-
-.jumbotron {
-    height: 200px;
-    background-size: contain;
-    background: black;
-}
-* {
-    color: red;
-}
-
-/*add a media query for min screen size of 480px where the jumbotron is 100px high*/
-@media screen and (min-width: 480px) {
-    .jumbotron {
-        background: url(../images/logo.webp) no-repeat center center;
-        background-size: cover;
-        height: 100vh;
-        margin-bottom: 0;
-        text-align: center;
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
-    * {
-        color: green;
+    .body {
+        height: 100%;
     }
 }
